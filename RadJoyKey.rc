@@ -1,0 +1,233 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_RADJOYKEY           ICON                    "RadJoyKey.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_RADJOYKEY MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Select ...",                 IDM_SELECT
+        MENUITEM "&About ...",                  IDM_ABOUT
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_RADJOYKEY ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+    "x",            IDM_EXIT,               ASCII,  ALT
+    "s",            IDM_SELECT,             ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About RadJoyKey"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_RADJOYKEY,IDC_STATIC,14,14,20,20
+    LTEXT           "RadJoyKey, Version 1.1",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_JOY_SELECT DIALOGEX 0, 0, 170, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RadJoyKey"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Application:",IDC_STATIC,5,6,50,8
+    COMBOBOX        IDC_APPLICATION,65,5,100,56,CBS_DROPDOWNLIST | WS_BORDER | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_ADD_APP,5,23,50,14,WS_GROUP
+    PUSHBUTTON      "&Delete",IDC_DELETE_APP,60,23,50,14,WS_GROUP
+    PUSHBUTTON      "&Edit...",IDC_EDIT_APP,115,23,50,14,WS_GROUP
+    LISTBOX         IDC_MAPSELECT,5,43,160,100
+    PUSHBUTTON      "&Add",IDC_ADD,5,149,50,14,WS_GROUP
+    PUSHBUTTON      "&Delete",IDC_DELETE,60,149,50,14,WS_GROUP
+    PUSHBUTTON      "&Edit...",IDC_EDIT,115,149,50,14,WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,60,179,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,115,179,50,14,WS_GROUP
+END
+
+IDD_JOY_CONFIG DIALOGEX 0, 0, 170, 220
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Config"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Name:",IDC_STATIC,5,5,50,8
+    EDITTEXT        IDC_NAME,65,5,100,10,WS_GROUP | NOT WS_TABSTOP
+    LTEXT           "&Joystick:",IDC_STATIC,5,24,50,8
+    COMBOBOX        IDC_JOYSTICK,65,24,100,56,CBS_DROPDOWNLIST | WS_BORDER | WS_VSCROLL
+    LTEXT           "&Mouse Axis:",IDC_STATIC,5,43,50,8
+    COMBOBOX        IDC_MOUSE,65,43,100,56,CBS_DROPDOWNLIST | WS_BORDER | WS_VSCROLL
+    CONTROL         "",IDC_KEYMAPPING,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_GROUP | WS_TABSTOP,5,62,160,100
+    PUSHBUTTON      "Special",IDC_SPECIAL,7,168,50,14,WS_GROUP
+    PUSHBUTTON      "&Clear",IDC_CLEAR,60,168,50,14,WS_GROUP
+    PUSHBUTTON      "Clear &All",IDC_CLEAR_ALL,115,168,50,14,WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,60,199,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,115,199,50,14,WS_GROUP
+END
+
+IDD_APPLICATION DIALOGEX 0, 0, 193, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Application"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,81,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,136,47,50,14
+    LTEXT           "Executable:",IDC_STATIC,7,8,39,8
+    EDITTEXT        IDC_EXECUTABLE,55,7,131,14,ES_AUTOHSCROLL
+    LTEXT           "Window Title:",IDC_STATIC,7,27,44,8
+    EDITTEXT        IDC_WINDOW_TITLE,55,26,131,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_JOY_SELECT, DIALOG
+    BEGIN
+    END
+
+    IDD_JOY_CONFIG, DIALOG
+    BEGIN
+    END
+
+    IDD_APPLICATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "RadJoyKey"
+END
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
