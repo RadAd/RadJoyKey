@@ -6,5 +6,6 @@ Joystick to Keyboard emulator.
 
 ![Windows](https://img.shields.io/badge/platform-Windows-blue.svg)
 [![Releases](https://img.shields.io/github/release/RadAd/RadJoyKey.svg)](https://github.com/RadAd/RadJoyKey/releases/latest)
+[![commits-since](https://img.shields.io/github/commits-since/RadAd/RadJoyKey/latest.svg)](commits/master)
 [![Build](https://img.shields.io/appveyor/ci/RadAd/radjoykey.svg)](https://ci.appveyor.com/project/RadAd/radjoykey)
 
